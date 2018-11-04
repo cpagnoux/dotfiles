@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for dir in ~/aur/*/; do
+	echo "Changing directory to $dir..."
+	cd "$dir"
+	echo "Checking for updates..."
+	git pull
+	makepkg -sri
+done

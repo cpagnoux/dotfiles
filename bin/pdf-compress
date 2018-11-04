@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [[ "$#" != 1 ]]; then
+	echo "Usage: $0 FILE_NAME"
+	exit
+fi
+
+file="$1"
+swap_file="$file.swp"
+
+cp "$file" "$swap_file"
+gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile="$file" "$swap_file"
+rm "$swap_file"

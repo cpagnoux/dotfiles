@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ "$#" != 2 ]]; then
+	echo "Usage: $0 SOURCE DEST"
+	exit
+fi
+
+source="$1"
+dest="$2"
+
+inkscape -D -z --file="$source" --export-pdf="$dest" --export-latex
