@@ -1,0 +1,21 @@
+Xcursor.theme: Adwaita
+
+URxvt.background: #000000
+URxvt.foreground: #ffffff
+URxvt.scrollBar: false
+
+! fonts
+URxvt.font: xft:DejaVu Sans Mono:style=Book:pixelsize=14
+URxvt.boldFont: xft:DejaVu Sans Mono:style=Bold:pixelsize=14
+URxvt.italicFont: xft:DejaVu Sans Mono:style=Oblique:pixelsize=14
+URxvt.boldItalicFont: xft:DejaVu Sans Mono:style=Bold Oblique:pixelsize=14
+URxvt.letterSpace: -1
+
+! fake transparency
+URxvt.transparent: true
+URxvt.shading: 5
+
+! clickable URLs
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
