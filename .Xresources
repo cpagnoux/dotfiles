@@ -5,10 +5,10 @@ URxvt.foreground: #ffffff
 URxvt.scrollBar: false
 
 ! fonts
-URxvt.font: xft:DejaVu Sans Mono:style=Book:pixelsize=14
-URxvt.boldFont: xft:DejaVu Sans Mono:style=Bold:pixelsize=14
-URxvt.italicFont: xft:DejaVu Sans Mono:style=Oblique:pixelsize=14
-URxvt.boldItalicFont: xft:DejaVu Sans Mono:style=Bold Oblique:pixelsize=14
+URxvt.font: xft:Source Code Pro:style=Regular:pixelsize=14
+URxvt.boldFont: xft:Source Code Pro:style=Bold:pixelsize=14
+URxvt.italicFont: xft:Source Code Pro:style=Italic:pixelsize=14
+URxvt.boldItalicFont: xft:Source Code Pro:style=Bold Italic:pixelsize=14
 URxvt.letterSpace: -1
 
 ! clickable URLs
