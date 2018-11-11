@@ -7,20 +7,60 @@ Xft.autohint:  false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
+! cursor
 Xcursor.theme: Adwaita
 
-URxvt.background: #333333
-URxvt.foreground: #ffffff
-URxvt.scrollBar:  false
-
-! fonts
+! font
 URxvt.font:           xft:Source Code Pro:style=Regular:pixelsize=14
 URxvt.boldFont:       xft:Source Code Pro:style=Bold:pixelsize=14
 URxvt.italicFont:     xft:Source Code Pro:style=Italic:pixelsize=14
 URxvt.boldItalicFont: xft:Source Code Pro:style=Bold Italic:pixelsize=14
 URxvt.letterSpace:    -1
 
+! general
+URxvt.scrollBar: false
+
 ! clickable URLs
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher:    /usr/bin/xdg-open
 URxvt.matcher.button:  1
+
+! ------------------------------------------------------------------------------
+! COLOR SCHEME
+! ------------------------------------------------------------------------------
+
+! main
+URxvt.background:   #282828
+URxvt.foreground:   #ffffff
+
+! black
+URxvt.color0:       #555555
+URxvt.color8:       #888888
+
+! red
+URxvt.color1:       #9c3528
+URxvt.color9:       #d64937
+
+! green
+URxvt.color2:       #61bc3b
+URxvt.color10:      #86df5d
+
+! yellow
+URxvt.color3:       #f3b43a
+URxvt.color11:      #fdd75a
+
+! blue
+URxvt.color4:       #0d68a8
+URxvt.color12:      #0f75bd
+
+! magenta
+URxvt.color5:       #744560
+URxvt.color13:      #9e5e83
+
+! cyan
+URxvt.color6:       #288e9c
+URxvt.color14:      #37c3d6
+
+! white
+URxvt.color7:       #a2a2a2
+URxvt.color15:      #f9f9f9
