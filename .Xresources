@@ -7,9 +7,6 @@ Xft.autohint:  false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-! cursor
-Xcursor.theme: Adwaita
-
 ! font
 URxvt.font:           xft:Source Code Pro:style=Regular:pixelsize=14
 URxvt.boldFont:       xft:Source Code Pro:style=Bold:pixelsize=14
