@@ -19,6 +19,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
 Plugin 'scrooloose/nerdtree'
+Plugin 'valloric/youcompleteme'
 Plugin 'evidens/vim-twig'
 Plugin 'briancollins/vim-jst'
 
