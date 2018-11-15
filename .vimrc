@@ -76,6 +76,7 @@ if has('syntax') && has('eval')
   packadd matchit
 endif
 
+set number
 set colorcolumn=81,101,121
 
 " Open NERDTree when Vim starts up with no file specified.
