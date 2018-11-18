@@ -1,7 +1,7 @@
 #!/bin/bash
 
 for dir in ~/aur/*/; do
-	echo "Changing directory to $dir..."
+	echo -e "\e[1;96m==> Changing directory to $dir...\e[0m"
 	cd "$dir"
 	echo "Checking for updates..."
 	git pull
