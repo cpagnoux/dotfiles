@@ -27,7 +27,7 @@ URxvt.matcher.button:  1
 ! ------------------------------------------------------------------------------
 
 ! main
-URxvt.background:   #282828
+URxvt.background:   #232323
 URxvt.foreground:   #ffffff
 
 ! black
