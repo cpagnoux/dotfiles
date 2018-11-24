@@ -191,6 +191,7 @@ exec --no-startup-id dropbox
 # finds out, if available)
 bar {
         status_command i3status
+        position top
 
         colors {
                 background #333333
