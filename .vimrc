@@ -19,6 +19,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
 Plugin 'scrooloose/nerdtree'
+Plugin 'majutsushi/tagbar'
 Plugin 'valloric/youcompleteme'
 Plugin 'evidens/vim-twig'
 Plugin 'briancollins/vim-jst'
@@ -88,3 +89,6 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Close Vim if the only window left open is a NERDTree.
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Open Tagbar with F8.
+nmap <F8> :TagbarToggle<CR>
