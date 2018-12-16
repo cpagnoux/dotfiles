@@ -61,3 +61,11 @@ URxvt.color14:      #37c3d6
 ! white
 URxvt.color7:       #a2a2a2
 URxvt.color15:      #f9f9f9
+
+! ------------------------------------------------------------------------------
+! i3 COLOR SCHEME
+! ------------------------------------------------------------------------------
+
+i3wm.backgroundColor: #333333
+i3wm.focusedColor:    #f0544c
+i3wm.inactiveColor:   #444444
