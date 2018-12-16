@@ -27,7 +27,7 @@ URxvt.matcher.button:  1
 ! ------------------------------------------------------------------------------
 
 ! main
-URxvt.background:   #232323
+URxvt.background:   #121d22
 URxvt.foreground:   #ffffff
 
 ! black
@@ -66,6 +66,6 @@ URxvt.color15:      #f9f9f9
 ! i3 COLOR SCHEME
 ! ------------------------------------------------------------------------------
 
-i3wm.backgroundColor: #333333
-i3wm.focusedColor:    #f0544c
-i3wm.inactiveColor:   #444444
+i3wm.backgroundColor: #222d32
+i3wm.focusedColor:    #00bcd4
+i3wm.inactiveColor:   #222d32
