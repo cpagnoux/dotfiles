@@ -21,6 +21,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 Plugin 'valloric/youcompleteme'
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'evidens/vim-twig'
 Plugin 'briancollins/vim-jst'
 
