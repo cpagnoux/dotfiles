@@ -8,10 +8,10 @@ Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
 ! font
-URxvt.font:           xft:Source Code Pro:style=Regular:pixelsize=14
-URxvt.boldFont:       xft:Source Code Pro:style=Bold:pixelsize=14
-URxvt.italicFont:     xft:Source Code Pro:style=Italic:pixelsize=14
-URxvt.boldItalicFont: xft:Source Code Pro:style=Bold Italic:pixelsize=14
+URxvt.font:           xft:Source Code Pro:style=Regular:pixelsize=16
+URxvt.boldFont:       xft:Source Code Pro:style=Bold:pixelsize=16
+URxvt.italicFont:     xft:Source Code Pro:style=Italic:pixelsize=16
+URxvt.boldItalicFont: xft:Source Code Pro:style=Bold Italic:pixelsize=16
 URxvt.letterSpace:    -1
 
 ! general
