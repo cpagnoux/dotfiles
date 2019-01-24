@@ -13,9 +13,8 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # Alias for downloading latest stable version of Adminer in public_html
-alias get-adminer-latest='cd ~/public_html \
-	&& wget https://www.adminer.org/latest-mysql-en.php \
-	&& mv latest-mysql-en.php adminer-mysql-en.php'
+alias get-adminer-latest='wget https://www.adminer.org/latest-mysql-en.php \
+	-O ~/public_html/adminer-mysql-en.php'
 
 # Alias for generating self-signed SSL certificate for testing purpose
 alias ssl-cert-gen='openssl req -new -x509 -nodes \
