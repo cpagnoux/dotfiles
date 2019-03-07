@@ -29,7 +29,8 @@ alias awesomium-cont='killall -CONT awesomium_process.exe'
 tf2_path='~/.local/share/Steam/steamapps/common/Team\ Fortress\ 2/tf'
 alias demopan-tf2="demopan -w $tf2_path --demos $tf2_path"
 
-PS1='[\u@\h \W]\$ '
+. /usr/share/git/completion/git-prompt.sh
+PS1='\e[1m\w$(__git_ps1 " \e[92m(%s)\e[39m") \$\e[0m '
 
 eval "$(symfony-autocomplete)"
 
