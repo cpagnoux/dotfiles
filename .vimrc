@@ -97,3 +97,18 @@ map <C-p> :FZF<CR>
 
 " Open Tagbar with F8.
 nmap <F8> :TagbarToggle<CR>
+
+" TypeScript tags
+let g:tagbar_type_typescript = {
+  \ 'ctagstype': 'typescript',
+  \ 'kinds': [
+    \ 'c:classes',
+    \ 'n:modules',
+    \ 'f:functions',
+    \ 'v:variables',
+    \ 'v:varlambdas',
+    \ 'm:members',
+    \ 'i:interfaces',
+    \ 'e:enums',
+  \ ]
+\ }
