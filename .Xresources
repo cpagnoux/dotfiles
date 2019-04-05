@@ -8,9 +8,11 @@ Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
 ! font
-URxvt.font:        xft:Inconsolata:style=Regular:pixelsize=16
-URxvt.boldFont:    xft:Inconsolata:style=Bold:pixelsize=16
-URxvt.letterSpace: -1
+URxvt.font:           xft:Anonymous Pro:style=Regular:pixelsize=16
+URxvt.boldFont:       xft:Anonymous Pro:style=Bold:pixelsize=16
+URxvt.italicFont:     xft:Anonymous Pro:style=Italic:pixelsize=16
+URxvt.boldItalicFont: xft:Anonymous Pro:style=Bold Italic:pixelsize=16
+!URxvt.letterSpace:    -1
 
 ! general
 URxvt.scrollBar: false
