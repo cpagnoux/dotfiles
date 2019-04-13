@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [[ "$#" != 1 ]]; then
+	echo "Usage: $0 DIRECTORY_TO_SERVE"
+	exit
+fi
+
+dir="$1"
+
+docker run -d \
+	--name php-apache \
+	--network host \
+	-v "$dir":/var/www/html \
+	php:apache
+
+docker exec php-apache docker-php-ext-install mysqli pdo_mysql
