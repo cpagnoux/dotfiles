@@ -98,6 +98,15 @@ map <C-p> :FZF<CR>
 " Open Tagbar with F8.
 nmap <F8> :TagbarToggle<CR>
 
+" Syntax highlighted languages in Markdown fenced code blocks
+let g:markdown_fenced_languages = [
+  \ 'javascript',
+  \ 'js=javascript',
+  \ 'json',
+  \ 'typescript',
+  \ 'ts=typescript',
+\ ]
+
 " TypeScript tags
 let g:tagbar_type_typescript = {
   \ 'ctagstype': 'typescript',
