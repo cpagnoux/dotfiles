@@ -27,6 +27,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'evidens/vim-twig'
 Plugin 'briancollins/vim-jst'
+Plugin 'sudar/vim-arduino-syntax'
 Plugin 'suan/vim-instant-markdown'
 
 call vundle#end()
