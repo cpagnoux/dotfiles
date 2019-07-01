@@ -13,4 +13,15 @@ docker run -d \
 	-v "$dir":/var/www/html \
 	php:apache
 
-docker exec php-apache docker-php-ext-install mysqli pdo_mysql
+# Install dependency of pdo_pgsql and pgsql.
+docker exec php-apache sh -c '
+	apt-get update
+	apt-get install -y --no-install-recommends libpq-dev
+	rm -rf /var/lib/apt/lists/*
+'
+
+docker exec php-apache docker-php-ext-install \
+	mysqli \
+	pdo_mysql \
+	pdo_pgsql \
+	pgsql
