@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [[ "$#" != 1 ]]; then
+	echo "Usage: $0 POSTGRES_PASSWORD"
+	exit
+fi
+
+root_password="$1"
+
+docker run -d \
+	--name postgres \
+	-e POSTGRES_PASSWORD="$root_password" \
+	--network host \
+	-v postgres_data:/var/lib/postgresql/data \
+	postgres
