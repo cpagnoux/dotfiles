@@ -3,6 +3,8 @@
 	email = christophe.pagnouxv@gmail.com
 [core]
 	editor = vim
+[pull]
+	rebase = true
 [push]
 	default = simple
 [alias]
