@@ -32,6 +32,13 @@ alias demopan-tf2="demopan -w $tf2_path --demos $tf2_path"
 . /usr/share/git/completion/git-prompt.sh
 PS1='\e[1m\w$(__git_ps1 " \e[92m(%s)\e[39m") \$\e[0m '
 
+if [[ -d ~/.bash_completion.d ]]; then
+	for completion in ~/.bash_completion.d/*; do
+		[[ -f "$completion" ]] && . "$completion"
+	done
+	unset completion
+fi
+
 eval "$(symfony-autocomplete)"
 
 export NVM_DIR="$HOME/.nvm"
