@@ -28,6 +28,7 @@ alias awesomium-cont='killall -CONT awesomium_process.exe'
 # Alias for starting Demopan with TF2 path
 tf2_path='~/.local/share/Steam/steamapps/common/Team\ Fortress\ 2/tf'
 alias demopan-tf2="demopan -w $tf2_path --demos $tf2_path"
+unset tf2_path
 
 . /usr/share/git/completion/git-prompt.sh
 PS1='\e[1m\w$(__git_ps1 " \e[92m(%s)\e[39m") \$\e[0m '
