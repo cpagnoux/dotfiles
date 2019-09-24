@@ -26,6 +26,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'joonty/vdebug'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'joonty/vim-phpqa'
 Plugin 'evidens/vim-twig'
 Plugin 'briancollins/vim-jst'
 Plugin 'sudar/vim-arduino-syntax'
@@ -93,6 +94,10 @@ map <C-p> :FZF<CR>
 
 " Open Tagbar with F8.
 nmap <F8> :TagbarToggle<CR>
+
+" PHP QA tools configuration
+let g:phpqa_messdetector_autorun = 0
+let g:phpqa_codesniffer_autorun = 0
 
 " Syntax highlighted languages in Markdown fenced code blocks
 let g:markdown_fenced_languages = [
