@@ -12,6 +12,10 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# Aliases for generating tags
+alias ctags-php='ctags -R --fields=+aimlS --languages=php'
+alias ctags-typescript='ctags -R --languages=typescript'
+
 # Alias for downloading latest stable version of Adminer in public_html
 alias get-adminer-latest='wget https://www.adminer.org/latest-en.php \
 	-O ~/public_html/adminer-en.php'
