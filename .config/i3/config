@@ -176,10 +176,20 @@ bindsym $mod+Pause mode "$mode_system"
 bindsym --release button2 kill
 bindsym --whole-window $mod+button2 kill
 
+# volume controls
+set $display_volume awk -F '[][]' '/Mono:/ { print $2 }' | xargs notify-send Volume
+
+bindsym $mod+m exec amixer -M set Master toggle
+bindsym $mod+comma exec amixer -M set Master 5%- | $display_volume
+bindsym $mod+period exec amixer -M set Master 5%+ | $display_volume
+
 # media player controls
-bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
+bindsym $mod+z exec playerctl previous
+bindsym $mod+x exec playerctl play-pause
+bindsym $mod+c exec playerctl next
 
 # start applications
 bindsym $mod+F1 exec chromium
