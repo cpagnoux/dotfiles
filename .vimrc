@@ -31,6 +31,7 @@ Plugin 'lumiliet/vim-twig'
 Plugin 'briancollins/vim-jst'
 Plugin 'sudar/vim-arduino-syntax'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'haproxy'
 
 call vundle#end()
 filetype plugin indent on
@@ -122,3 +123,6 @@ let g:tagbar_type_typescript = {
     \ 'e:enums',
   \ ]
 \ }
+
+" File type detection for HAProxy
+au BufRead,BufNewFile haproxy* set ft=haproxy
