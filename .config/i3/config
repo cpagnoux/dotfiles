@@ -178,23 +178,23 @@ bindsym --whole-window $mod+button2 kill
 
 # volume controls
 set $display_volume awk -F '[][]' '/Mono:/ { print $2 }' \
-	| tr -d % \
-	| xargs -I VOL zenity --progress --text=VOL% --percentage=VOL --no-cancel --timeout=1
+        | tr -d % \
+        | xargs -I VOL zenity --progress --text=VOL% --percentage=VOL --no-cancel --timeout=1
 
-bindsym XF86AudioMute exec amixer -M set Master toggle
-bindsym XF86AudioLowerVolume exec amixer -M set Master 5%- | $display_volume
-bindsym XF86AudioRaiseVolume exec amixer -M set Master 5%+ | $display_volume
-bindsym $mod+m exec amixer -M set Master toggle
-bindsym $mod+comma exec amixer -M set Master 5%- | $display_volume
-bindsym $mod+period exec amixer -M set Master 5%+ | $display_volume
+bindsym XF86AudioMute exec --no-startup-id amixer -M set Master toggle
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -M set Master 5%- | $display_volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -M set Master 5%+ | $display_volume
+bindsym $mod+m exec --no-startup-id amixer -M set Master toggle
+bindsym $mod+comma exec --no-startup-id amixer -M set Master 5%- | $display_volume
+bindsym $mod+period exec --no-startup-id amixer -M set Master 5%+ | $display_volume
 
 # media player controls
-bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym $mod+z exec playerctl previous
-bindsym $mod+x exec playerctl play-pause
-bindsym $mod+c exec playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym $mod+z exec --no-startup-id playerctl previous
+bindsym $mod+x exec --no-startup-id playerctl play-pause
+bindsym $mod+c exec --no-startup-id playerctl next
 
 # start applications
 bindsym $mod+F1 exec chromium
