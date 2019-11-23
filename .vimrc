@@ -126,3 +126,6 @@ let g:tagbar_type_typescript = {
 
 " File type detection for HAProxy
 au BufRead,BufNewFile haproxy* set ft=haproxy
+
+" Fix: File type detection for .tsx files
+autocmd BufNewFile,BufRead *.tsx set filetype=typescript
