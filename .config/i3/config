@@ -198,7 +198,7 @@ bindsym $mod+c exec --no-startup-id playerctl next
 
 # start applications
 bindsym $mod+F1 exec chromium
-bindsym $mod+F2 exec caja
+bindsym $mod+F2 exec nautilus
 bindsym $mod+F3 exec audacious
 bindsym $mod+F4 exec spotify
 bindsym $mod+F5 exec steam
