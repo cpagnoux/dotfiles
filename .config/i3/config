@@ -208,6 +208,7 @@ bindsym Shift+Print exec --no-startup-id sleep 0.2 && scrot -s -e 'mv $f ~/Pictu
 
 # autostart applications
 exec --no-startup-id nitrogen --restore
+exec --no-startup-id sleep 5 && redshift-gtk
 exec --no-startup-id dropbox
 
 # Retrieve colors from Xresources
