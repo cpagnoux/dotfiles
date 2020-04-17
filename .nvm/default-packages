@@ -4,5 +4,6 @@ instant-markdown-d
 json-server
 loopback-cli
 nodemon
+prettier
 typescript
 yarn
