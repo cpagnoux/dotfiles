@@ -1,41 +1,41 @@
 " An example for a vimrc file.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2019 Jan 26
+" Last change:	2019 Dec 17
 "
 " To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
+"	       for Unix:  ~/.vimrc
 "	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
+"	 for MS-Windows:  $VIM\_vimrc
+"	      for Haiku:  ~/config/settings/vim/vimrc
 "	    for OpenVMS:  sys$login:.vimrc
 
-" Vundle
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" vim-plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
 " Plugins
-Plugin 'scrooloose/nerdtree'
-Plugin 'majutsushi/tagbar'
-Plugin 'valloric/youcompleteme'
-Plugin 'vim-airline/vim-airline'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'ryanoasis/vim-devicons'
-Plugin 'joonty/vdebug'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'joonty/vim-phpqa'
-Plugin 'lumiliet/vim-twig'
-Plugin 'briancollins/vim-jst'
-Plugin 'sudar/vim-arduino-syntax'
-Plugin 'suan/vim-instant-markdown'
-Plugin 'haproxy'
+Plug 'preservim/nerdtree'
+Plug 'majutsushi/tagbar'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'vim-airline/vim-airline'
+Plug 'airblade/vim-gitgutter'
+Plug 'ryanoasis/vim-devicons'
+Plug 'joonty/vdebug'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'joonty/vim-phpqa'
+Plug 'lumiliet/vim-twig'
+Plug 'briancollins/vim-jst'
+Plug 'sudar/vim-arduino-syntax'
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+Plug 'vim-scripts/haproxy'
 
-call vundle#end()
-filetype plugin indent on
+call plug#end()
 
 " When started as "evim", evim.vim will already have done these settings, bail
 " out.
@@ -127,6 +127,3 @@ let g:tagbar_type_typescript = {
 
 " File type detection for HAProxy
 au BufRead,BufNewFile haproxy* set ft=haproxy
-
-" Fix: File type detection for .tsx files
-autocmd BufNewFile,BufRead *.tsx set filetype=typescript
