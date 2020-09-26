@@ -1,0 +1,5 @@
+{
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
+}
