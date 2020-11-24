@@ -154,7 +154,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # set shut down, restart and locking features
-set $locker i3lock -i /usr/share/backgrounds/archlinux/archlinux-simplyblack.png -c 000000 && sleep 1
+set $locker convert /usr/share/backgrounds/archlinux/archwave.png -resize 1920x1080 RGB:- \
+        | i3lock -i /dev/stdin --raw 1920x1080:rgb -c 000000 \
+        && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
