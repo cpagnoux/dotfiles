@@ -80,6 +80,7 @@ endif
 
 set number
 set colorcolumn=81,101,121
+set wildignorecase
 
 let mapleader = ","
 
