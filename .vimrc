@@ -27,13 +27,15 @@ Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'ryanoasis/vim-devicons'
 Plug 'joonty/vdebug'
+Plug 'preservim/nerdcommenter'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'joonty/vim-phpqa'
 Plug 'lumiliet/vim-twig'
 Plug 'briancollins/vim-jst'
-Plug 'sudar/vim-arduino-syntax'
-Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+Plug 'pearofducks/ansible-vim', {'do': './UltiSnips/generate.sh'}
 Plug 'vim-scripts/haproxy'
+Plug 'sudar/vim-arduino-syntax'
 
 call plug#end()
 
