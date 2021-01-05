@@ -6,4 +6,4 @@ docker run -d \
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-v /opt/portainer:/data \
 	--restart always \
-	portainer/portainer
+	portainer/portainer-ce
