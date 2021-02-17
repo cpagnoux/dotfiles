@@ -1,3 +1,6 @@
+# SSH using kitten
+alias ssh="kitty +kitten ssh"
+
 # Alias for downloading latest stable version of Adminer in public_html
 alias get-adminer-latest="wget https://www.adminer.org/latest-en.php \
   -O ~/public_html/adminer-en.php"
