@@ -30,7 +30,6 @@ Plug 'joonty/vdebug'
 Plug 'preservim/nerdcommenter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
-Plug 'joonty/vim-phpqa'
 Plug 'lumiliet/vim-twig'
 Plug 'briancollins/vim-jst'
 Plug 'pearofducks/ansible-vim', {'do': './UltiSnips/generate.sh'}
@@ -104,10 +103,6 @@ map <C-p> :FZF<CR>
 
 " Open Tagbar with F8.
 nmap <F8> :TagbarToggle<CR>
-
-" PHP QA tools configuration
-let g:phpqa_messdetector_autorun = 0
-let g:phpqa_codesniffer_autorun = 0
 
 " Syntax highlighted languages in Markdown fenced code blocks
 let g:markdown_fenced_languages = [
