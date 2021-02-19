@@ -1,15 +1,15 @@
 #!/bin/bash
 
 if [[ "$#" != 1 ]]; then
-	echo "Usage: $0 <mysql-root-password>"
-	exit
+  echo "Usage: $0 <mysql-root-password>"
+  exit
 fi
 
 root_password="$1"
 
 docker run -d \
-	--name mariadb \
-	-e MYSQL_ROOT_PASSWORD="$root_password" \
-	--network host \
-	-v mariadb_mysql:/var/lib/mysql \
-	mariadb
+  --name mariadb \
+  -e MYSQL_ROOT_PASSWORD="$root_password" \
+  --network host \
+  -v mariadb_mysql:/var/lib/mysql \
+  mariadb

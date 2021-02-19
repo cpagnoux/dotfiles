@@ -1,8 +1,8 @@
 #!/bin/bash
 
 docker run -d \
-	--name mongo \
-	--network host \
-	-v mongo_db:/data/db \
-	-v mongo_configdb:/data/configdb \
-	mongo
+  --name mongo \
+  --network host \
+  -v mongo_db:/data/db \
+  -v mongo_configdb:/data/configdb \
+  mongo

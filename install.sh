@@ -1,9 +1,9 @@
 #!/bin/bash
 
 for file in {.[^.],}*; do
-	if [[ "$file" = "$0" || "$file" = .git ]]; then
-		continue
-	fi
+  if [[ "$file" = "$0" || "$file" = .git ]]; then
+    continue
+  fi
 
-	cp -rv "$file" ~/
+  cp -rv "$file" ~/
 done

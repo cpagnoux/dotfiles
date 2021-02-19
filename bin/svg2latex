@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [[ "$#" != 2 ]]; then
-	echo "Usage: $0 <source> <dest>"
-	exit
+  echo "Usage: $0 <source> <dest>"
+  exit
 fi
 
 source="$1"

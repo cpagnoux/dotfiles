@@ -1,27 +1,27 @@
 #!/bin/bash
 
 if [[ "$#" != 1 ]]; then
-	echo "Usage: $0 <directory-to-serve>"
-	exit
+  echo "Usage: $0 <directory-to-serve>"
+  exit
 fi
 
 dir="$1"
 
 docker run -d \
-	--name php-apache \
-	--network host \
-	-v "$dir":/var/www/html \
-	php:apache
+  --name php-apache \
+  --network host \
+  -v "$dir":/var/www/html \
+  php:apache
 
 # Install dependency of pdo_pgsql and pgsql.
 docker exec php-apache sh -c '
-	apt-get update
-	apt-get install -y --no-install-recommends libpq-dev
-	rm -rf /var/lib/apt/lists/*
+  apt-get update
+  apt-get install -y --no-install-recommends libpq-dev
+  rm -rf /var/lib/apt/lists/*
 '
 
 docker exec php-apache docker-php-ext-install \
-	mysqli \
-	pdo_mysql \
-	pdo_pgsql \
-	pgsql
+  mysqli \
+  pdo_mysql \
+  pdo_pgsql \
+  pgsql
