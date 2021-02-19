@@ -2,6 +2,6 @@
 
 docker run -d \
   --name mongo-express \
-  -e ME_CONFIG_MONGODB_SERVER=127.0.0.1 \
   --network host \
+  -e ME_CONFIG_MONGODB_SERVER=127.0.0.1 \
   mongo-express

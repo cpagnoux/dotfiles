@@ -9,7 +9,7 @@ root_password="$1"
 
 docker run -d \
   --name mariadb \
-  -e MYSQL_ROOT_PASSWORD="$root_password" \
   --network host \
+  -e MYSQL_ROOT_PASSWORD="$root_password" \
   -v mariadb_mysql:/var/lib/mysql \
   mariadb

@@ -10,7 +10,7 @@ dir="$1"
 docker run -d \
   --name php-apache \
   --network host \
-  -v "$dir":/var/www/html \
+  -v "$dir:/var/www/html" \
   php:apache
 
 # Install dependency of pdo_pgsql and pgsql.

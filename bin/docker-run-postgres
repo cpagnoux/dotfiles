@@ -9,7 +9,7 @@ root_password="$1"
 
 docker run -d \
   --name postgres \
-  -e POSTGRES_PASSWORD="$root_password" \
   --network host \
+  -e POSTGRES_PASSWORD="$root_password" \
   -v postgres_data:/var/lib/postgresql/data \
   postgres
