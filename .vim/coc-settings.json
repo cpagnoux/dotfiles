@@ -1,5 +1,8 @@
 {
   "coc.preferences.extensionUpdateCheck": "daily",
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "phpactor.config": {
+    "language_server_completion.trim_leading_dollar": true
+  }
 }
