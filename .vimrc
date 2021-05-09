@@ -85,6 +85,16 @@ set wildignorecase
 
 let mapleader = ","
 
+" coc configuration
+let g:coc_global_extensions = [
+  \ 'coc-css',
+  \ 'coc-html',
+  \ 'coc-json',
+  \ 'coc-phpactor',
+  \ 'coc-pyright',
+  \ 'coc-tsserver',
+\ ]
+
 " vim-airline configuration
 let g:airline_powerline_fonts = 1
 
