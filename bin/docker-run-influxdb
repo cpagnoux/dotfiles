@@ -1,0 +1,7 @@
+#!/bin/bash
+
+docker run -d \
+  --name influxdb \
+  --network host \
+  -v influxdb2:/var/lib/influxdb2 \
+  influxdb
