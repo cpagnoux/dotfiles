@@ -29,6 +29,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'joonty/vdebug'
 Plug 'preservim/nerdcommenter'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'lbrayner/vim-rzip'
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'lumiliet/vim-twig'
 Plug 'briancollins/vim-jst'
