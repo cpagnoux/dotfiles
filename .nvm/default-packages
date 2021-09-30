@@ -1,3 +1,4 @@
+@types/node
 firebase-tools
 gitmoji-cli
 instant-markdown-d
@@ -5,5 +6,6 @@ json-server
 loopback-cli
 nodemon
 prettier
+ts-node
 typescript
 yarn
