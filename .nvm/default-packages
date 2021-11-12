@@ -1,6 +1,7 @@
 @types/node
 firebase-tools
 gitmoji-cli
+heroku
 instant-markdown-d
 json-server
 loopback-cli
