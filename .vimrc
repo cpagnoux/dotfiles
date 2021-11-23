@@ -88,6 +88,7 @@ let mapleader = ","
 
 " coc configuration
 let g:coc_global_extensions = [
+  \ '@yaegassy/coc-ansible',
   \ 'coc-css',
   \ 'coc-html',
   \ 'coc-json',
