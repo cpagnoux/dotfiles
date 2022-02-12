@@ -183,14 +183,16 @@ bindsym --release button2 kill
 bindsym --whole-window $mod+button2 kill
 
 # volume controls
-set $display_volume awk -F '[][]' '/Mono:/ { print $2 }' \
+set $display_mute_state awk -F '[][]' '/Front Left:/ { print $4 }' \
+        | xargs -I STATE zenity --info --text='Sound STATE' --timeout=1
+set $display_volume awk -F '[][]' '/Front Left:/ { print $2 }' \
         | tr -d % \
         | xargs -I VOL zenity --progress --text=VOL% --percentage=VOL --no-cancel --timeout=1
 
-bindsym XF86AudioMute exec --no-startup-id amixer -M set Master toggle
+bindsym XF86AudioMute exec --no-startup-id amixer -M set Master toggle | $display_mute_state
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -M set Master 5%- | $display_volume
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -M set Master 5%+ | $display_volume
-bindsym $mod+m exec --no-startup-id amixer -M set Master toggle
+bindsym $mod+m exec --no-startup-id amixer -M set Master toggle | $display_mute_state
 bindsym $mod+comma exec --no-startup-id amixer -M set Master 5%- | $display_volume
 bindsym $mod+period exec --no-startup-id amixer -M set Master 5%+ | $display_volume
 
