@@ -94,6 +94,7 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-phpactor',
   \ 'coc-pyright',
+  \ 'coc-sh',
   \ 'coc-tsserver',
 \ ]
 
