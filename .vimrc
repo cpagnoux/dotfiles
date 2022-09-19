@@ -34,6 +34,7 @@ Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'lumiliet/vim-twig'
 Plug 'briancollins/vim-jst'
 Plug 'pearofducks/ansible-vim', {'do': './UltiSnips/generate.sh'}
+Plug 'hashivim/vim-terraform'
 Plug 'vim-scripts/haproxy'
 Plug 'sudar/vim-arduino-syntax'
 
