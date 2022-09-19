@@ -1,3 +1,6 @@
+# Update Vim plugins
+alias vim-plug-update="vim +PlugUpgrade +PlugUpdate +qall"
+
 # SSH using kitten
 alias ssh="kitty +kitten ssh"
 
