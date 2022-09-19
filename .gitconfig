@@ -3,6 +3,10 @@
 	email = christophe.pagnouxv@gmail.com
 [core]
 	editor = vim
+[diff]
+	colorMoved = zebra
+[fetch]
+	prune = true
 [pull]
 	rebase = true
 [push]
