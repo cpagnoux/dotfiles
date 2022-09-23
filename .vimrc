@@ -85,7 +85,13 @@ set number
 set colorcolumn=81,101,121
 set wildignorecase
 
+if has("termguicolors")
+  set termguicolors
+endif
+
 let mapleader = ","
+
+colorscheme slate
 
 " coc configuration
 let g:coc_global_extensions = [
