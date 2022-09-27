@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker run -d \
+  --name remix-ide \
+  --network host \
+  remixproject/remix-ide
