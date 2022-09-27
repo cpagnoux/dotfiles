@@ -5,6 +5,7 @@ heroku
 instant-markdown-d
 json-server
 loopback-cli
+madge
 nodemon
 prettier
 ts-node
