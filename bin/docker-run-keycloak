@@ -3,4 +3,4 @@
 docker run -d \
   --name keycloak \
   --network host \
-  jboss/keycloak
+  quay.io/keycloak/keycloak start-dev
