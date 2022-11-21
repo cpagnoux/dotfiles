@@ -91,7 +91,7 @@ endif
 
 let mapleader = ","
 
-colorscheme slate
+colorscheme desert
 
 " coc configuration
 let g:coc_global_extensions = [
