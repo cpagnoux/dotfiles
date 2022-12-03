@@ -31,6 +31,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'lbrayner/vim-rzip'
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+Plug 'aklt/plantuml-syntax'
 Plug 'lumiliet/vim-twig'
 Plug 'briancollins/vim-jst'
 Plug 'pearofducks/ansible-vim', {'do': './UltiSnips/generate.sh'}
