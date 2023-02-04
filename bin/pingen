@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [[ "$1" == '-h' || "$1" == '--help' ]]; then
+  echo "$0 [<length>]"
+  exit
+fi
+
+RANDOM=$$
+
+length="${1:-4}"
+pin=''
+
+for (( i = 0; i < $length; i++ )); do
+  R=$(( $RANDOM % 10 ))
+  pin="$pin$R"
+done
+
+echo "$pin"
