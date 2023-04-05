@@ -3,6 +3,7 @@
 docker run -d \
   --name kafka-ui \
   --network host \
+  -e DYNAMIC_CONFIG_ENABLED=true \
   -e KAFKA_CLUSTERS_0_NAME=local \
   -e KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=localhost:9092 \
   provectuslabs/kafka-ui
