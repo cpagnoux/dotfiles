@@ -20,17 +20,24 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Plugins
+
+" UI
 Plug 'preservim/nerdtree'
 Plug 'majutsushi/tagbar'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'ryanoasis/vim-devicons'
+
+" Features
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'joonty/vdebug'
 Plug 'preservim/nerdcommenter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'lbrayner/vim-rzip'
+
+" Languages
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+Plug 'freitass/todo.txt-vim'
 Plug 'aklt/plantuml-syntax'
 Plug 'lumiliet/vim-twig'
 Plug 'briancollins/vim-jst'
