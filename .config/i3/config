@@ -189,9 +189,9 @@ bindsym Control+grave exec --no-startup-id dunstctl history-pop
 bindsym Control+Shift+period exec --no-startup-id dunstctl context
 
 # volume controls
-set $mute_volume wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
-set $lower_volume wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
-set $raise_volume wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+set $mute_volume wpctl set-mute @DEFAULT_SINK@ toggle
+set $lower_volume wpctl set-volume @DEFAULT_SINK@ 5%-
+set $raise_volume wpctl set-volume @DEFAULT_SINK@ 5%+
 
 bindsym XF86AudioMute exec --no-startup-id $mute_volume
 bindsym XF86AudioLowerVolume exec --no-startup-id $lower_volume
