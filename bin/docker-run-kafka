@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -d '' composefile <<EOF
+read -d '' composefile << EOF
 version: "2"
 
 services:

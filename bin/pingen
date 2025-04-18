@@ -10,8 +10,8 @@ RANDOM=$$
 length="${1:-4}"
 pin=''
 
-for (( i = 0; i < $length; i++ )); do
-  R=$(( $RANDOM % 10 ))
+for ((i = 0; i < $length; i++)); do
+  R=$(($RANDOM % 10))
   pin="$pin$R"
 done
 
