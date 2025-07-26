@@ -1,6 +1,9 @@
 # Update Vim plugins
 alias vim-plug-update="vim +PlugUpdate +PlugUpgrade +qall"
 
+# Prettify shell script
+alias shprettify="shfmt -i 2 -bn -ci -sr"
+
 # SSH using kitten
 alias ssh="kitty +kitten ssh"
 
@@ -17,6 +20,11 @@ alias get-adminer-latest="wget https://www.adminer.org/latest-en.php \
 alias generate-ssl-cert="openssl req -new -x509 -nodes \
   -out ~/Documents/server.crt \
   -keyout ~/Documents/server.key"
+
+# Kill all Wine processes
+alias kill-all-wine-processes="ps x | grep -F .exe | grep -v grep \
+  | sed -E 's/^ ([0-9]+) .+/\1/' \
+  | xargs kill -9"
 
 # Control Quake Live awesomium_process
 alias awesomium-stop="killall -STOP awesomium_process.exe"
