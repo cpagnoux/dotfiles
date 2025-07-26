@@ -219,6 +219,7 @@ bindsym Print exec --no-startup-id scrot -u -e 'mv $f ~/Pictures/'
 bindsym Shift+Print exec --no-startup-id sleep 0.2 && scrot -s -e 'mv $f ~/Pictures/'
 
 # autostart applications
+exec --no-startup-id snixembed --fork
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift-gtk
